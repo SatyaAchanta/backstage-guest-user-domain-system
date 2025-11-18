@@ -4,7 +4,7 @@ metadata:
   name: shopping-cart
 spec:
   type: website
-  owner: guests
+  owner: ecommerce
   lifecycle: production
 
 ---
