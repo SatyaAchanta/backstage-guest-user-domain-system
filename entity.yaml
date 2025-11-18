@@ -54,7 +54,7 @@ spec:
   lifecycle: production
   system: shopping-system
   dependsOn:
-    - resource: inventory-db
+    - resource:inventory-db
 
 ---
 
