@@ -6,6 +6,18 @@ spec:
   type: website
   owner: user:SAV
   lifecycle: production
+  dependsOn: service:inventory-service
+
+---
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: inventory-service
+spec:
+  type: service
+  owner: user:SAV
+  lifecycle: production
 
 ---
 
