@@ -15,6 +15,7 @@ metadata:
 spec:
   owner: ecommerce
   lifecycle: production
+  domain: shopping-app-domain
 
 ---
 apiVersion: backstage.io/v1alpha1
