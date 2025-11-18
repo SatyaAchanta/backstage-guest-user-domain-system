@@ -1,4 +1,16 @@
 apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: inventory-db
+  description: DB for shopping records
+spec:
+  type: database
+  owner: ecommerce
+  system: shopping-system
+
+---
+
+apiVersion: backstage.io/v1alpha1
 kind: Domain
 metadata:
   name: shopping-app-domain
@@ -41,6 +53,8 @@ spec:
   owner: user:SAV
   lifecycle: production
   system: shopping-system
+  dependsOn:
+    - resournce: inventory-db
 
 ---
 
