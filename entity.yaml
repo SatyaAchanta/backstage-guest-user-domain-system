@@ -1,4 +1,13 @@
 apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: shopping-system
+spec:
+  owner: ecommerce
+  lifecycle: production
+
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: shopping-cart
@@ -6,6 +15,7 @@ spec:
   type: website
   owner: user:SAV
   lifecycle: production
+  system: shopping-system
   dependsOn: 
     - component:inventory-service
 
@@ -19,6 +29,7 @@ spec:
   type: service
   owner: user:SAV
   lifecycle: production
+  system: shopping-system
 
 ---
 
