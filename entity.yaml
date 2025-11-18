@@ -6,3 +6,13 @@ spec:
   type: website
   owner: guests
   lifecycle: production
+
+---
+
+apiVerison: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: ecommerce
+spec:
+  type: team
+  children: []
